@@ -21,6 +21,14 @@ Este projeto contém um conjunto de testes automatizados para o site [OpenLibrar
 
 2. Adicione os arquivos "cypress.config.js" e "generate-report.js" na pasta raiz onde foi instalado o cypress via npm
 
-3. Execute o teste no Gitbash usando o comando "npm run test:report" ou execute pelo próprio Cypress se preferir
+3. Adicione o seguinte código de script:
+"scripts": {
+    "test": "cypress run",
+    "report": "node generate-report.js",
+    "test:report": "npm run test && npm run report"
+  }
+ No arquivo package.json na pasta raiz onde está o seu cypress
 
-4. Após todos os testes serem executados será gerada uma pasta chamada "mochawesome-report" na pasta raiz do cypress contendo o relatório dos testes
+4. Execute o teste no Gitbash usando o comando "npm run test:report" ou execute pelo próprio Cypress se preferir
+
+5. Após todos os testes serem executados será gerada uma pasta chamada "mochawesome-report" na pasta raiz do cypress contendo o relatório dos testes
