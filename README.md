@@ -27,7 +27,7 @@ Este projeto contém um conjunto de testes automatizados para o site [OpenLibrar
     "report": "node generate-report.js",
     "test:report": "npm run test && npm run report"
   }
- No arquivo package.json na pasta raiz onde está o seu cypress
+ No arquivo package.json na pasta raiz onde está o seu cypress, ou o substitua pelo "package.json" desse repositório
 
 4. Execute o teste no Gitbash usando o comando "npm run test:report" ou execute pelo próprio Cypress se preferir
 
